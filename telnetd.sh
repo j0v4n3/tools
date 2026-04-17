@@ -1,7 +1,6 @@
 #!/bin/sh
 
-#flag=`nv get telnetd_enable`
-flag=`AT+&& telnetd -p 23 -l /bin/sh`
+flag=`nv get telnetd_enable`
 
 if [ "$flag" == "y" ]; then
     echo "Starting telnetd......!"
